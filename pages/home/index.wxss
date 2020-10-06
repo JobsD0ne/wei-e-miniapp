@@ -1,0 +1,160 @@
+/* //弹出框样式 */
+.record-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  font-size: 40rpx;
+  letter-spacing: 4rpx;
+}
+.record-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80%;
+  
+}
+.record-border{
+  border: 1rpx solid #000000;
+  border-radius: 50%;
+  padding: 40rpx;
+  
+}
+.record-border-move{
+  animation:recording 3s infinite;
+  animation-direction:alternate;/*轮流反向播放动画。*/
+  animation-timing-function: ease-in-out; /*动画的速度曲线*/
+}
+@keyframes recording
+  {
+      0%{
+      transform: scale(1);  /*开始为原始大小*/
+      }
+      25%{
+          transform: scale(1.1); /*放大1.1倍*/
+      }
+      50%{
+          transform: scale(1);
+      }
+      75%{
+          transform: scale(1.1);
+      }
+}
+
+.record-btn image{
+  width: 200rpx;
+  height: 200rpx;
+  
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 500rpx;
+  height: 400rpx;
+  border-radius: 8rpx;
+  background: #fff;
+  z-index: 99;
+}
+
+.popup-view {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.popup-icon {
+  position: absolute;
+  right: 0;
+  top: -60rpx;
+  z-index: 999;
+  font-size: 45rpx;
+  color: #fff;
+}
+
+.popup .text {
+  padding-top: 84rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+}
+
+.popup .btn, .bind-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340rpx;
+  height: 80rpx;
+  margin-top: 58rpx;
+  line-height: 80rpx;
+  background-size: cover;
+  text-align: center;
+  background-image: url("https://imgs.xqphh.pandabg.cn/miniappindex-btn.png");
+}
+
+.topicRecording {
+  float: left;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+
+.modal-button {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  border-top: 1px solid rgba(232, 233, 234, 1);
+  text-align: center;
+  padding-top: 15rpx;
+}
+
+.modal-button-text {
+  display: block;
+  padding-top: 6rpx;
+}
+
+.circle-box {
+  height: 80%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+.yuyinbg {
+  width: 193rpx;
+  height: 56rpx;
+  z-index: 100;
+  background-image: url("https://file.baimipay.cn/yuyinbg@3x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.yuyinbg text {
+  font-size: 32rpx;
+  color: #2e3038;
+  margin-left: 40rpx;
+}
+
+.yuyinbg image {
+  margin-left: 13rpx;
+  width: 30rpx;
+  height: 34rpx;
+}

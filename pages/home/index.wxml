@@ -1,0 +1,14 @@
+<!-- 弹出层 -->
+<view>
+  <text class="record-text" selectable="false" space="false" decode="false">
+    {{recordText}}
+  </text>
+  <view class="record-btn">
+    <view class="record-border {{recordMove}}">
+      <image class="" src="/images/luyin.png"  bindtap="bindtap"/>
+    </view>
+  </view>
+</view>
+  
+
+

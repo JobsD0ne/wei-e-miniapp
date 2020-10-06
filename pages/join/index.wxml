@@ -1,0 +1,16 @@
+<view class="very_code">
+  <view class="verify_code_div">
+    <view class="verify_code_char">
+      <input class="verify_code_char_input" maxlength="1" focus="{{focusArray[0]}}" bindinput="inputFn" value="{{textArray[0]}}" type="number"/>
+    </view>
+    <view class="verify_code_char">
+      <input class="verify_code_char_input" maxlength="1" focus="{{focusArray[1]}}" bindinput="inputFn" value="{{textArray[1]}}" type="number"/>
+    </view>
+    <view class="verify_code_char">
+      <input class="verify_code_char_input" maxlength="1"  focus="{{focusArray[2]}}" bindinput="inputFn" value="{{textArray[2]}}" type="number"/>
+    </view>
+    <view class="verify_code_char">
+      <input class="verify_code_char_input" maxlength="1" focus="{{focusArray[3]}}" bindinput="inputFn" value="{{textArray[3]}}" type="number"/>
+    </view>
+  </view>
+</view>

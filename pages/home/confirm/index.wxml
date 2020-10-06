@@ -1,0 +1,14 @@
+<!--页面代码-->
+<view class='trip_audio'>
+    <view class='trip_tit'>录音内容</view>
+    <slider style="width:582rpx;margin-left:50rpx;" bindchange="changeValue" value='{{currentNum/durationNum}}' backgroundColor='#EDEDED' selected-color="#4F68FA" block-size="20"></slider>
+    <view class='time'>
+      <view class='time_left'>{{current}}</view>
+      <!-- <view class='time_left'>{{currentNum}}</view> -->
+      <view class='time_right'>{{duration}}</view>
+    </view>
+    <view class='trip_btn'>
+      <image src='/images/play_full.png' bindtap='play'  wx:if="{{tridPlay}}"></image>
+      <image src='/images/pause.png' bindtap='play'  wx:if="{{!tridPlay}}"></image>
+    </view>
+  </view>
